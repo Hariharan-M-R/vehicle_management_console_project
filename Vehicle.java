@@ -1,5 +1,3 @@
-// Press Shift twice to open the Search Everywhere dialog and type show whitespaces,
-// then press Enter. You can now see whitespace characters in your code.
 import java.sql.*;
 import java.util.*;
 public class Vehicle {
@@ -12,7 +10,6 @@ public class Vehicle {
         Statement st= con.createStatement();
         String checkExistingUser = "SELECT user_email FROM user_details WHERE user_email='" + email + "'";
         ResultSet existingUserRows = st.executeQuery(checkExistingUser);
-
         if (existingUserRows.next()) {
             System.out.println("User already exists. Please sign in or use a different email for sign up.");
         } else {
