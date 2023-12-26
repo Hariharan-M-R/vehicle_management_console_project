@@ -21,7 +21,6 @@ public class Vehicle {
     public void addVehicle(String name, String type, int availableCount, String numberPlate, int securityDeposit) throws SQLException {
         try (Connection con = getConnect();
              PreparedStatement preparedStatement = con.prepareStatement("INSERT INTO vehicles(name, type, available_count, number_plate, security_deposit) VALUES (?, ?, ?, ?, ?)")) {
-
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, type);
             preparedStatement.setInt(3, availableCount);
