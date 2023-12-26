@@ -319,7 +319,6 @@ public class Vehicle {
 
                         renterOption = sc.nextInt();
                         sc.nextLine();
-
                         switch (renterOption) {
                             case 1:
                                 obj.viewAvailableVehicles();
