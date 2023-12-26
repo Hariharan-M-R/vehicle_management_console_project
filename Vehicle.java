@@ -28,7 +28,7 @@ public class Vehicle {
             preparedStatement.setInt(5, securityDeposit);
 
             int rows = preparedStatement.executeUpdate();
-            System.out.println("Vehicle added successfully");
+            System.out.println("Vehicle details added successfully");
         }
     }
     public void modifyVehicle(String name, int availableCount, String numberPlate) throws SQLException {
